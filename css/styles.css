@@ -513,7 +513,7 @@ border-color: #31d0aa;
 }
 
 .footer-form-btn {
-  width: 165px;
+  min-width: 169px;  
   height: 40px;
   border-radius: 4px;
   background-color: #4d5ae5;
@@ -576,7 +576,7 @@ border-color: #31d0aa;
     0 1px 3px 0 rgba(0, 0, 0, 0.12),
     0 2px 1px 0 rgba(0, 0, 0, 0.2);
   background-color: #fcfcfc;
-  padding: 24px;
+  padding: 72px 24px 24px 24px;
 }
 
 .modal-close {
@@ -601,7 +601,7 @@ border-color: #31d0aa;
 }
 
 .modal-close-svg{
-  fill: #422e2e;
+  fill: #2e2f42;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -620,7 +620,9 @@ border-color: #31d0aa;
   font-weight: 500;
   letter-spacing: 0.02em;
   text-align: center;
-  padding-top: 48px;
+
+
+  /* padding-top: 48px; */
   margin-bottom: 16px;
 }
 
@@ -739,6 +741,8 @@ fill: #2e2f42;
 }
 
 .modal-check-label {
+  display: flex;
+  gap: 8px;
   font-size: 12px;
   line-height: 1.33;
   letter-spacing: 0.04em;
@@ -756,13 +760,14 @@ fill: #2e2f42;
   border: 1px solid rgba(46, 47, 66, 0.4);
   fill: transparent;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-check:checked + .modal-check-label .modal-check-icon {
   background-color: #404bbf;
   fill: #f4f4fd;
-  border: 1px solid #404bbf;
+  border-color: #404bbf;
 }
 
 .feedback-link {
@@ -797,7 +802,6 @@ fill: #2e2f42;
   cursor: pointer;
   width: 169px;
   justify-content: center;
-  margin-top: 16px;
 }
 
 .modal-btn:hover,
